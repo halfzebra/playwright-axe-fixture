@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "playwright test --headed",
+    "test:accessibility": "playwright test --headed && open accessibility-report/index.html",
     "start:server": "http-server ./sample-app"
   },
   "keywords": [

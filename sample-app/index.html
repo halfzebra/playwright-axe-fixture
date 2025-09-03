@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample App</title>
+    <style>
+      .bad-button {
+        background-color: #ffff00;
+        color: #ffffff;
+        border: none;
+        padding: 5px;
+        cursor: pointer;
+      }
+
+      .hidden-content {
+        display: none;
+        color: #cccccc;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+
+    <!-- Non-compliant button: div instead of button, poor contrast -->
+    <button class="bad-button" onclick="toggleContent()">Click</button>
+
+    <!-- Non-compliant hidden content -->
+    <div id="hiddenContent" class="hidden-content">
+      <p>This text has poor contrast</p>
+      <img src="image.jpg" width="50" height="50" />
+      <input type="text" placeholder="Enter text" />
+    </div>
+
+    <script>
+      function toggleContent() {
+        const content = document.getElementById('hiddenContent');
+        content.style.display =
+          content.style.display === 'none' ? 'block' : 'none';
+      }
+    </script>
+  </body>
+</html>

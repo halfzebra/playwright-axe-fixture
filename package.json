@@ -1,0 +1,26 @@
+{
+  "name": "@tuxedocode/playwright-axe-fixture",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test --headed",
+    "start:server": "http-server ./sample-app"
+  },
+  "keywords": [
+    "playwright",
+    "axe",
+    "accessibility",
+    "testing"
+  ],
+  "author": "Eduard Kyvenko <eduard.kyvenko@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.3.0",
+    "axe-core": "^4.10.3"
+  },
+  "dependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "http-server": "^14.1.1"
+  }
+}
